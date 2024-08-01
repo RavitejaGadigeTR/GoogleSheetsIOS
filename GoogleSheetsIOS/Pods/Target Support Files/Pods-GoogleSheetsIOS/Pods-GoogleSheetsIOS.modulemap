@@ -1,0 +1,6 @@
+framework module Pods_GoogleSheetsIOS {
+  umbrella header "Pods-GoogleSheetsIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,9 +13,12 @@
 		AB6602AF2C5B7857001AB9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6602AD2C5B7857001AB9CE /* Main.storyboard */; };
 		AB6602B12C5B7859001AB9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6602B02C5B7859001AB9CE /* Assets.xcassets */; };
 		AB6602B42C5B7859001AB9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6602B22C5B7859001AB9CE /* LaunchScreen.storyboard */; };
+		FD0C450CC5AE804A4217A5ED /* Pods_GoogleSheetsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4BB0665077977AC483D21 /* Pods_GoogleSheetsIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15440125C8F673A97C2CF104 /* Pods-GoogleSheetsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSheetsIOS.debug.xcconfig"; path = "Target Support Files/Pods-GoogleSheetsIOS/Pods-GoogleSheetsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		33D4BB0665077977AC483D21 /* Pods_GoogleSheetsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleSheetsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6602A42C5B7857001AB9CE /* GoogleSheetsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleSheetsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6602A72C5B7857001AB9CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB6602A92C5B7857001AB9CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AB6602B02C5B7859001AB9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6602B32C5B7859001AB9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6602B52C5B7859001AB9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89552CD1A0F3DE66A0393F5 /* Pods-GoogleSheetsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSheetsIOS.release.xcconfig"; path = "Target Support Files/Pods-GoogleSheetsIOS/Pods-GoogleSheetsIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0C450CC5AE804A4217A5ED /* Pods_GoogleSheetsIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F29B9F1BC0860A6BBCB231B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D4BB0665077977AC483D21 /* Pods_GoogleSheetsIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14442B59FC89F36CC50F95AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15440125C8F673A97C2CF104 /* Pods-GoogleSheetsIOS.debug.xcconfig */,
+				C89552CD1A0F3DE66A0393F5 /* Pods-GoogleSheetsIOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AB66029B2C5B7857001AB9CE = {
 			isa = PBXGroup;
 			children = (
 				AB6602A62C5B7857001AB9CE /* GoogleSheetsIOS */,
 				AB6602A52C5B7857001AB9CE /* Products */,
+				14442B59FC89F36CC50F95AE /* Pods */,
+				0F29B9F1BC0860A6BBCB231B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB6602B82C5B7859001AB9CE /* Build configuration list for PBXNativeTarget "GoogleSheetsIOS" */;
 			buildPhases = (
+				4133BC475BD2A1C3060549C2 /* [CP] Check Pods Manifest.lock */,
 				AB6602A02C5B7857001AB9CE /* Sources */,
 				AB6602A12C5B7857001AB9CE /* Frameworks */,
 				AB6602A22C5B7857001AB9CE /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4133BC475BD2A1C3060549C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleSheetsIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB6602A02C5B7857001AB9CE /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		AB6602B92C5B7859001AB9CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15440125C8F673A97C2CF104 /* Pods-GoogleSheetsIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +368,7 @@
 		};
 		AB6602BA2C5B7859001AB9CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89552CD1A0F3DE66A0393F5 /* Pods-GoogleSheetsIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
